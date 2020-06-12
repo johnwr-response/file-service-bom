@@ -10,11 +10,12 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
+	<groupId>no.responseweb.imagearchive</groupId>
 	<artifactId>file-service-bom</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>file-service-bom</name>
-	<description>Response File Service BOM</description>
+	<packaging>pom</packaging>
 
+	<description>Response File Service BOM</description>
 
 	<licenses>
 		<license>

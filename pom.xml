@@ -51,6 +51,7 @@
 		<!--Set to name of project-->
 		<docker.image.name>${project.artifactId}</docker.image.name>
 		<imagearchive.domain.version>0.0.1-SNAPSHOT</imagearchive.domain.version>
+		<imagearchive.dbutils.version>0.0.1-SNAPSHOT</imagearchive.dbutils.version>
 	</properties>
 
 	<dependencyManagement>
@@ -68,6 +69,11 @@
 				<version>${spring-boot-admin.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>no.responseweb.imagearchive</groupId>
+				<artifactId>file-store-dbutils</artifactId>
+				<version>${imagearchive.dbutils.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.xml.bind</groupId>

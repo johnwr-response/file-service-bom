@@ -99,11 +99,11 @@
 	</dependencyManagement>
 
 	<dependencies>
-		<dependency>
-			<groupId>no.responseweb.imagearchive</groupId>
-			<artifactId>file-service-domain</artifactId>
-			<version>${imagearchive.domain.version}</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>no.responseweb.imagearchive</groupId>-->
+<!--			<artifactId>file-service-domain</artifactId>-->
+<!--			<version>${imagearchive.domain.version}</version>-->
+<!--		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>

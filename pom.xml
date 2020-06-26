@@ -52,6 +52,9 @@
 		<docker.image.name>${project.artifactId}</docker.image.name>
 		<imagearchive.domain.version>0.0.1-SNAPSHOT</imagearchive.domain.version>
 		<imagearchive.dbutils.version>0.0.1-SNAPSHOT</imagearchive.dbutils.version>
+		<com.twelvemonkeys.imageio.version>3.5</com.twelvemonkeys.imageio.version>
+		<org.openpnp.opencv.version>4.3.0-2</org.openpnp.opencv.version>
+		<com.drewnoakes.metadata-extractor.version>2.14.0</com.drewnoakes.metadata-extractor.version>
 	</properties>
 
 	<dependencyManagement>
@@ -101,6 +104,31 @@
 				<version>${awaitility.version}</version>
 				<scope>test</scope>
 			</dependency>
+			<dependency>
+				<groupId>com.twelvemonkeys.imageio</groupId>
+				<artifactId>imageio-core</artifactId>
+				<version>${com.twelvemonkeys.imageio.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.twelvemonkeys.imageio</groupId>
+				<artifactId>imageio-bmp</artifactId>
+				<version>${com.twelvemonkeys.imageio.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.twelvemonkeys.imageio</groupId>
+				<artifactId>imageio-jpeg</artifactId>
+				<version>${com.twelvemonkeys.imageio.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.openpnp</groupId>
+				<artifactId>opencv</artifactId>
+				<version>${org.openpnp.opencv.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.drewnoakes</groupId>
+				<artifactId>metadata-extractor</artifactId>
+				<version>${com.drewnoakes.metadata-extractor.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -134,6 +162,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-zipkin</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>

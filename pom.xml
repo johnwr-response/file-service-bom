@@ -53,6 +53,7 @@
 		<imagearchive.domain.version>0.0.1-SNAPSHOT</imagearchive.domain.version>
 		<imagearchive.dbutils.version>0.0.1-SNAPSHOT</imagearchive.dbutils.version>
 		<com.twelvemonkeys.imageio.version>3.5</com.twelvemonkeys.imageio.version>
+		<net.coobird.thumbnailator.version>0.4.11</net.coobird.thumbnailator.version>
 		<org.openpnp.opencv.version>4.3.0-2</org.openpnp.opencv.version>
 		<com.drewnoakes.metadata-extractor.version>2.14.0</com.drewnoakes.metadata-extractor.version>
 	</properties>
@@ -118,6 +119,11 @@
 				<groupId>com.twelvemonkeys.imageio</groupId>
 				<artifactId>imageio-jpeg</artifactId>
 				<version>${com.twelvemonkeys.imageio.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.coobird</groupId>
+				<artifactId>thumbnailator</artifactId>
+				<version>${net.coobird.thumbnailator.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.openpnp</groupId>
